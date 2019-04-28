@@ -16,7 +16,7 @@ def gen_prime():
         prime_list.append(current)
         yield current
         while is_divisible(current, prime_list): current += 1 
-
+            
 def prob_3(target):
     prime_generator = gen_prime()
     prime = None
